@@ -1,0 +1,172 @@
+/*** Global Styling ***/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/*** Mobile Hero Picture Styling ***/
+
+.bg-pic {
+  width: 100%;
+  height: 35%;
+  max-height: 600px;
+  position: relative;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url("../img/building_front.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/building_front.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(21, 48, 74, 0.8)),
+    to(rgba(21, 48, 74, 0.8))
+  );
+  background: linear-gradient(rgba(21, 48, 74, 0.8), rgba(21, 48, 74, 0.8));
+  border-radius: 0;
+}
+
+.hero-text {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-size: 5.6vw;
+  font-weight: 600;
+}
+
+.hero-text p {
+  margin-bottom: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/*** Mobile Data Styling ***/
+
+.milestones {
+  position: relative;
+}
+
+.milestones .heading {
+  font-size: 1.1rem;
+}
+
+.milestones .number {
+  font-size: 3.2rem;
+  color: #2ebcd7;
+}
+
+.milestones .unit {
+  font-size: 1rem;
+}
+
+/*** Media Queries ***/
+
+@media (min-width: 768px) {
+  /*** Medium Hero Picture Styling ***/
+
+  .bg-pic {
+    height: 65%;
+  }
+
+  .jumbotron {
+    height: 8rem;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(21, 48, 74, 0.9)),
+      to(rgba(21, 48, 74, 0.9))
+    );
+    background: linear-gradient(rgba(21, 48, 74, 0.9), rgba(21, 48, 74, 0.9));
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text h1 span {
+    display: none;
+  }
+
+  /*** Medium Data Styling ***/
+
+  .milestones .heading {
+    font-size: 0.9rem;
+  }
+
+  .milestones .number {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  .milestones .unit {
+    font-size: 0.7rem;
+  }
+
+  .circle {
+    width: 11rem;
+    height: 11rem;
+    z-index: -1;
+    border: 7px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .rectangle {
+    background: white;
+    padding: 0.7rem 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  /*** Large Data Styling ***/
+
+  .milestones .heading {
+    font-size: 1.1rem;
+  }
+
+  .milestones .number {
+    font-size: 3.2rem;
+  }
+
+  .milestones .unit {
+    font-size: 1rem;
+  }
+}
